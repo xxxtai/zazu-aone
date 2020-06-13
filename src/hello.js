@@ -8,6 +8,7 @@ module.exports = (pluginContext) => {
                     icon: 'fa-hand-spock-o',
                     title: `Hello, ${name}!`,
                     subtitle: 'Please type your name!',
+                    value:'88980908******'
                 },
             ])
         })
