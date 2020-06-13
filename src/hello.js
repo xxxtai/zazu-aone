@@ -1,5 +1,7 @@
 const got = require('got')
 const URL = 'https://api.github.com/search/repositories'
+const RESULT_ITEMS = 10
+
 module.exports = (pluginContext) => {
     pluginContext.console.log('verbose', '#$%^&*(****((((()))))))))))' + URL)
     return (name, env = {}) => {
