@@ -6,7 +6,7 @@ module.exports = (pluginContext) => {
         const options = {
             json: true,
             query: {
-                q: query,
+                q: name,
                 per_page: RESULT_ITEMS
             },
             headers: {
