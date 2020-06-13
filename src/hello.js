@@ -1,7 +1,7 @@
 const got = require('got')
 const URL = 'https://api.github.com/search/repositories'
 module.exports = (pluginContext) => {
-    pluginContext.console.log('verbose', URL)
+    pluginContext.console.log('verbose', '#$%^&*(****((((()))))))))))'+ URL)
     return (name, env = {}) => {
           const options = {
     json: true,
@@ -15,8 +15,15 @@ module.exports = (pluginContext) => {
     useElectronNet: false
   }
         return new Promise((resolve, reject) => {
+            pluginContext.console.log('verbose', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
             got(URL, options).then((response) => {
-                pluginContext.console.log('info', '&&&&&&&&&&&&&&&', response)
+                        const data = response.body.items.map((repository) => ({
+          id: repository.full_name,
+          title: repository.full_name,
+          value: repository.html_url,
+          subtitle: emoji.emojify(repository.description)
+        }))
+                pluginContext.console.log('info', '&&&&&&&&&&&&&&&', data)
             }))
             pluginContext.console.log('info', '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%')
             resolve([
