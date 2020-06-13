@@ -1,12 +1,8 @@
 module.exports = (pluginContext) => {
-    pluginContext.console.log('verbose', 'hello world', {
-        ping: 'pong',
-    })
+    pluginContext.console.log('verbose', '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
     return (name, env = {}) => {
         return new Promise((resolve, reject) => {
-            pluginContext.console.log('info', 'test moda', {
-                ping: 'pong',
-            })
+            pluginContext.console.log('info', '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%')
             resolve([
                 {
                     icon: 'fa-hand-spock-o',
