@@ -27,7 +27,7 @@ module.exports = (pluginContext) => {
                     id: repository.full_name,
                     title: repository.full_name,
                     value: repository.html_url,
-                    subtitle: emoji.emojify(repository.description)
+                    subtitle: "moda do it"
                 }))
                 pluginContext.console.log('info', '&&&&&&&&&&&&&&&', {
                     data: data
