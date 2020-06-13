@@ -1,3 +1,4 @@
+const got = require('got')
 module.exports = (pluginContext) => {
     pluginContext.console.log('verbose', '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
     return (name, env = {}) => {

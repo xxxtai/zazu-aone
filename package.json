@@ -15,5 +15,10 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "mocha": "^2.5.3"
+  },
+    "dependencies": {
+    "cache-conf": "^0.6.0",
+    "got": "^8.0.1",
+    "node-emoji": "^1.8.1"
   }
 }
