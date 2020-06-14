@@ -21,7 +21,7 @@ module.exports = (pluginContext) => {
                 ping: '0099877))))))'
             })
             got(URL, options).then((response) => {
-                pluginContext.console.log('info', '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%startffff4444%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', response)
+                pluginContext.console.log('info', '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%startffff4444%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', response.body)
                 const data = [{
                     id : "test",
                     title: "test title",
