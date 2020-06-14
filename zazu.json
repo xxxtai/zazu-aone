@@ -23,7 +23,7 @@
                 "interval": 1000,
                 "space": true,
                 "args": "Required",
-                "script": "src/hello.js",
+                "script": "src/index.js",
                 "connections": [
                     "Open"
                 ]
