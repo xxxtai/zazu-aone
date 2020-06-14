@@ -20,7 +20,7 @@ module.exports = (pluginContext) => {
             pluginContext.console.log('verbose', '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', {
                 ping: '0099877))))))'
             })
-            got(URL, options).then((response) => {
+            got(URL).then((response) => {
                 pluginContext.console.log('info', '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%startffff4444%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', response.body)
                 const data = [{
                     id : "test",
