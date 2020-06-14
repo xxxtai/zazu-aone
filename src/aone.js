@@ -1,9 +1,9 @@
 const got = require('got')
-const URL = 'https://martin.alibaba-inc.com/pinleicoupon/campaign/getIndustries'
+const URL = 'https://aone.alibaba-inc.com/appcenter/ajax/queryAppList?pageStart=0&pageSize=10&pageSort=GMT_MODIFIED&pageOrder=DESC&currentUser=140033&collect=N&queryType=simple&buildSysInfo=true&appResInfo=true&name=martin&excludeAppType=functionApp'
 
 module.exports.search = (pluginContext, query) => {
     if (pluginContext) {
-        pluginContext.console.log('verbose', '((((((((((((((((((())))))))))))))))))))' + query)
+        pluginContext.console.log('verbose', '((((((((((((((((((())))))))))))))))))))' + query + URL)
     }
     console.log("%%%%%%%query:" + query)
     return new Promise((resolve, reject) => {
