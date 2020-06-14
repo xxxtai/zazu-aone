@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const hello = require('../src/hello')()
+const hello = require('../src/aone')()
 
 describe('Hello', () => {
   describe('.search', () => {
